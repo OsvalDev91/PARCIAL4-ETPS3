@@ -6,7 +6,7 @@ import 'package:parcial4etps/principal.dart';
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp();
-  runApp(FirebaseAPP());
+  runApp(PrimeraPantalla());
 }
 
 class FirebaseAPP extends StatelessWidget {
@@ -17,7 +17,23 @@ class FirebaseAPP extends StatelessWidget {
     return const MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Firebase Firestore',
-      home: Principal(),
+      //home: Principal(),
+    );
+  }
+}
+
+class PrimeraPantalla extends StatelessWidget {
+  const PrimeraPantalla({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      body: Center(
+        child: ElevatedButton(
+          child: Text('TABLA CLIENTES'),
+          onPressed: (){Navigator.of(context).push(MaterialPageRoute(builder: (context) => Principal(), ));},
+        ),
+      ),
     );
   }
 }
