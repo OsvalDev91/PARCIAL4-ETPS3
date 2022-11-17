@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:parcial4etps/clientes.dart';
+import 'package:parcial4etps/vuelos.dart';
 
 class Principal extends StatelessWidget {
   const Principal({Key? key}) : super(key: key);
@@ -16,7 +17,7 @@ class Principal extends StatelessWidget {
               child: const Text('CLIENTES'),
             ),
             ElevatedButton(
-              onPressed: () {Navigator.of(context).push(MaterialPageRoute(builder: (context) => Clientes(),)); },
+              onPressed: () {Navigator.of(context).push(MaterialPageRoute(builder: (context) => Vuelos(),)); },
               child: const Text('VUELOS'),
             ),
           ],

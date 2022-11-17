@@ -259,7 +259,7 @@ class _ClientesState extends State<Clientes> {
     await _clientes.doc(idreservas).delete();
 
     ScaffoldMessenger.of(context).showSnackBar(const SnackBar(
-        content: Text('El producto fue eliminado correctamente')));
+        content: Text('El cliente fue eliminado correctamente')));
   }
 
   @override
