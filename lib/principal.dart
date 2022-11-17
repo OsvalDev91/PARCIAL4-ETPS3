@@ -112,14 +112,14 @@ class _PrincipalState extends State<Principal> {
                           .add({"cedula": cedula, "nombre": nombre, "apellido": apellido, "fecha_nacimiento": fecha_nacimiento,
                         "sexo": sexo, "tipo": tipo, "usuario": usuario, "idreservas": idreservas,});
 
-                      _cedulaController.text = '';
-                      _nombreController.text = '';
-                      _apellidoController.text = '';
-                      _fechaController.text = '';
-                      _sexoController.text = '';
-                      _tipoController.text = '';
-                      _usuarioController.text = '';
-                      _idreservasController.text = '';
+                      _cedulaController.text = "";
+                      _nombreController.text = "";
+                      _apellidoController.text = "";
+                      _fechaController.text = "";
+                      _sexoController.text = "";
+                      _tipoController.text = "";
+                      _usuarioController.text = "";
+                      _idreservasController.text = "";
 
                       Navigator.of(context).pop();
                     }
@@ -309,6 +309,7 @@ class _PrincipalState extends State<Principal> {
         ),
 // agregar productos
         floatingActionButton: FloatingActionButton(
+
           onPressed: () => _create(),
           child: const Icon(Icons.add),
         ),
